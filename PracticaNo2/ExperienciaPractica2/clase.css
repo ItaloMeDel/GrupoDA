@@ -1,0 +1,45 @@
+.body-class {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.header-class {
+    background: rgb(218, 247, 166);
+    background: linear-gradient(90deg, rgba(218, 247, 166, 1) 0%, rgba(255, 195, 0, 1) 20%, rgba(255, 87, 51, 1) 40%, rgba(199, 0, 57, 1) 60%, rgba(144, 12, 63, 1) 80%, rgba(88, 24, 69, 1) 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.h1-class {
+    font-size: 2em;
+}
+
+.section-class {
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.h2-class {
+    color: #333;
+}
+
+.p-class {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.footer-class {
+    background: rgb(218, 247, 166);
+    background: linear-gradient(90deg, rgba(218, 247, 166, 1) 0%, rgba(255, 195, 0, 1) 20%, rgba(255, 87, 51, 1) 40%, rgba(199, 0, 57, 1) 60%, rgba(144, 12, 63, 1) 80%, rgba(88, 24, 69, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
