@@ -1,0 +1,73 @@
+/* REGEX */
+[class^="btn-"] {
+    padding: 10px;
+    color: white;
+    background-color: green;
+}
+
+[class$="-info"] {
+    color: blue;
+}
+
+[class*="data"] {
+    font-weight: bold;
+}
+
+a[href^="http"] {
+    color: darkblue;
+}
+
+[id*="\\d"] {
+    font-size: 1.2em;
+}
+
+
+/* HERENCIA/CASCADA */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    color: darkblue;
+}
+
+h1, h2, h3 {
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.container {
+    border: 1px solid #ccc;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+.box.special {
+    background-color: orange;
+}
+
+.highlight {
+    color: red !important;
+}
+
+p {
+    color: gray;
+}
+
+p.alert {
+    color: black;
+}
+
+#unique {
+    color: green;
+}
+
+

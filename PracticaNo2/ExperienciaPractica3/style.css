@@ -1,0 +1,63 @@
+/* ATRIBUTOS */
+[data-type] {
+    background-color: lightblue;
+}
+
+[data-type="admin"] {
+    background-color: lightgreen;
+}
+
+/* PSEUDO CLASES */
+
+a:visited {
+    color: purple;
+}
+
+p:nth-child(even) {
+    font-weight: bold;
+}
+
+p:nth-child(odd) {
+    font-weight: lighter;
+}
+
+li:last-child {
+    color: red;
+}
+
+li:first-child {
+    color: blue;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:checked {
+    color: darkblue;
+}
+
+a:hover {
+    background-color: lightgreen;
+}
+
+/* PSEUDO ELEMENTOS */
+p::before {
+    content: "Inicio - ";
+    font-weight: bold;
+    color: red;
+}
+p::after {
+    content: " - Fin";
+    font-weight: bold;
+    color: red;
+}
+p::first-letter {
+    font-size: 2em;
+    color: brown;
+}
+
+input::placeholder {
+    color: darkgreen;
+    font-weight: bold;
+}
