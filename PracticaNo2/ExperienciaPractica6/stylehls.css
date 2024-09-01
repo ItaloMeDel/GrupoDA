@@ -1,0 +1,12 @@
+
+.first {
+    color: hsl(155, 55%, 47%);
+}
+
+.second {
+    color: hsl(78, 84%, 24%); 
+}
+
+.third {
+    color: hsla(327, 50%, 37%, 0.76);
+}
