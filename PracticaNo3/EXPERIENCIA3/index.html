@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EJEMPLO DE CSS GRID</title>
+<style>
+    body {
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    color: #f0f0f0; 
+    }
+
+    h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ff1744; 
+    font-size: 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    }
+
+    .section {
+        padding: 20px;
+        margin: 20px;
+        background-color: #1c1c1c; /* Fondo de sección muy oscuro */
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); 
+    }
+
+    .section p {
+        text-align: center;
+        color: #e0e0e0; 
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        border: 3px solid #ff1744; 
+    }
+
+    .grid-container > div {
+        background-color: #212121; 
+        color: #ffeb3b; 
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 8px;
+    }
+
+    .grid-auto-flow-row {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, auto); 
+        grid-auto-flow: row; 
+    }
+
+    .grid-auto-flow-row-dense {
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    grid-auto-flow: row dense; 
+    }
+
+    .grid-template-2 {
+    grid-template:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    }
+
+    @media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+    }
+
+    @media (max-width: 600px) {
+    body {
+        background-color: #000; 
+    }
+    h1, h2 {
+        color: #ffeb3b;
+    }
+    }
+</style>
+</head>
+<body>
+
+<section class="section">
+    <h1>Grid Auto-Flow</h1>
+    <p>El atributo <em>grid-auto-flow</em> controla cómo se colocan los elementos en la cuadrícula.</p>
+
+    <h2>grid-auto-flow: row</h2>
+    <div class="grid-container grid-auto-flow-row">
+        <div>1</div>
+        <div>2</div>
+        <div class="item3">3</div>
+        <div>4</div>
+    </div>
+
+    <h2>grid-auto-flow: row dense</h2>
+    <p>El valor "dense" llena los huecos en la cuadrícula:</p>
+    <div class="grid-container grid-auto-flow-row-dense">
+        <div>1</div>
+        <div>2</div>
+        <div class="item3">3</div>
+        <div>4</div>
+    </div>
+</section>
+
+<section class="section">
+    <h1>Plantilla de Página Web con Grid</h1>
+    <p>Puedes usar la propiedad <em>grid-area</em> para nombrar los elementos de la cuadrícula.</p>
+
+
+    <div class="grid-container grid-template-2">
+        <div style="grid-area: header;">Encabezado</div>
+        <div style="grid-area: menu;">Menú</div>
+        <div style="grid-area: main;">Principal</div>
+        <div style="grid-area: right;">Derecha</div>
+        <div style="grid-area: footer;">Pie de Página</div>
+    </div>
+</section>
+
+<section class="section">
+    <h1>Uso de Líneas en Grid</h1>
+    <p>referenciar números de línea al colocar los elementos de la cuadrícula.</p>
+
+    <div class="grid-container" style="grid-template-columns: auto auto auto;">
+        <div style="grid-column: 1 / span 2;">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</section>
+
+<section class="section">
+    <h1>Elementos de Grid</h1>
+    <p>Un diseño Grid debe tener un elemento padre con la propiedad <em>display</em> configurada en <em>grid</em> o <em>inline-grid</em>.</p>
+
+    <div class="grid-container" style="grid-template-columns: auto auto auto;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</section>
+
+</body>
+</html>
