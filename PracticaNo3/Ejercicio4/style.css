@@ -1,0 +1,193 @@
+body {
+    width: 96vw;
+    height: 100vh;
+    margin: 0.1;
+    padding: 0;
+    overflow: scroll;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0% 2%;
+    width: 100%;
+}
+
+#upper-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-button {
+    text-decoration: none;
+    margin: 0 3px;
+    padding: 2px 0px 0px 0px;
+    color: black;
+    font-weight: bold;
+    height: 26px;
+    width: 30px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.upper-button:hover {
+    background-color: lightgrey;
+}
+
+footer {
+    height: 60vh;
+}
+
+main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+#introduction {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#welcome-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+
+#welcome-button a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 15vh;
+    white-space: nowrap;
+    font-size: x-small;
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(6, 20vh);
+    grid-gap: min(20px, 20px);
+    height: auto;
+    margin: 8px 0 0 0;
+}
+
+div#grid-container section {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+#shoes {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+#jean-short {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#vest {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#pool-short {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#belt {
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+#red-vest {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+ 
+#shirt {
+    grid-column: 1/3;
+    grid-row: 5/7;
+}
+
+#boots {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+#backpack {
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+img {
+    height: 80%;
+}
+
+@media (max-width: 900px) {
+    h3 {
+        font-size: small;
+    }
+
+    h5 {
+        font-size: x-small;
+    }
+
+    #welcome-button a {
+        display: inline-block;
+        white-space: normal;
+        word-wrap: break-word;
+        font-size: xx-small;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #welcome-button {
+        width: auto;
+    }
+
+    #introduction {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    img {
+        height: auto;
+        width: 60%;
+    }
+
+    #belt img {
+        width: 100%;
+    }
+}
+
+
