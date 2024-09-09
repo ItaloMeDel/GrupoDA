@@ -131,7 +131,6 @@ section#fiveth-cell h1, h3 {
 
 #sixth-cell{
     grid-column: 3/4;
-    grid-row: 2/3;
     background-color: white;
     display: flex;
     flex-direction: column;
