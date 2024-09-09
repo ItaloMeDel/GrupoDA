@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diseño Flexbox Responsivo</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        font-size: 1.875rem; 
+        text-align: center;
+        height: 100vh; 
+        display: flex;
+    }
+
+    .flex-item-left {
+        padding: 20px; 
+        flex: 1; 
+        background-color: #f1f1f1;
+    }
+
+    .flex-item-right {
+        color: white;
+        padding: 20px;
+        flex: 1;
+        background-color: dodgerblue;
+    }
+
+    @media (max-width: 800px) {
+        .flex-container {
+        flex-direction: column;
+        }
+    }
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1 style="text-align: center;">Diseño Flexbox Responsivo</h1>
+    <p><strong>cajitas que se adaptan bonito</strong></p>
+</header>
+
+<main>
+    <div class="flex-container">
+        <div class="flex-item-left">Elemento 1</div>
+    <div class="flex-item-right">Elemento 2</div>
+    </div>
+</main>
+
+</body>
+</html>
