@@ -1,0 +1,21 @@
+blockquote {
+    background-color: #f8f9fa;
+    border-left: 5px solid #007bff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+blockquote .blockquote-footer {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    color: #6c757d;
+}
+
+img.rounded-circle {
+    border: 3px solid #007bff;
+}
+
+.me-3 {
+    margin-right: 1.5rem;
+}
