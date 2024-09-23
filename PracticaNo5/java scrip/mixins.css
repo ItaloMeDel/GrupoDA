@@ -1,0 +1,10 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}/*# sourceMappingURL=mixins.css.map */
