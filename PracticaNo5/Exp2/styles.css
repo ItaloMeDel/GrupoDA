@@ -1,0 +1,87 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #305acc;
+  color: white;
+  padding: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-left: 12%;
+}
+header nav ul li {
+  margin: 0 1%;
+  width: 150px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5%;
+}
+header nav ul li a:hover {
+  background-color: white;
+  opacity: 0.9;
+  color: #333;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+main {
+  padding: 5%;
+}
+main section {
+  margin-bottom: 5%;
+}
+main section h2 {
+  color: #c73e3e;
+}
+
+footer {
+  background-color: #305acc;
+  color: white;
+  text-align: center;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  padding: 3%;
+}
+
+footer p {
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */
