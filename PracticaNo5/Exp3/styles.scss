@@ -1,0 +1,65 @@
+$primary-color: #3498db;
+$hover-color: darken($primary-color, 10%);
+$font-stack: 'Helvetica, Arial, sans-serif';
+
+body {
+    font-family: $font-stack;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+
+    .nav-link {
+        color: $primary-color;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $hover-color;
+            color: white;
+        }
+    }
+}
+
+.container {
+    header {
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: $primary-color;
+        }
+    }
+
+    #services {
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            margin-bottom: 1rem;
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 300px; // ajusta según el contenido
+        opacity: 1;
+    }
+}
+
+.collapse {
+    animation: slideIn 0.5s ease forwards;
+}
