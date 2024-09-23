@@ -1,0 +1,66 @@
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card-img-top {
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-body {
+  text-align: center;
+}
+.card .card-body .btn-outline-danger,
+.card .card-body .btn-outline-primary {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+.card .card-body .bi-heart,
+.card .card-body .bi-cart {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.row .col-md-4 {
+  max-width: 33.3333%;
+}
+
+.general-margin {
+  margin: 5%;
+}
+
+.nav-link {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.nav-link:hover {
+  background-color: darkgrey;
+}
+
+.carousel {
+  max-width: 70%;
+  margin-left: 13%;
+}
+
+.img-product {
+  width: 90%;
+}
+
+@media (max-width: 765px) {
+  .img-product {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .row .formatter {
+    margin: 10%;
+    max-width: 80%;
+  }
+}/*# sourceMappingURL=sasstyle.css.map */
