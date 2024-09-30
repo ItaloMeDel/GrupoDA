@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React con Enlaces Externos</title>
+    <!-- Enlaces externos a las librerías de React y ReactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Enlace a Babel para poder usar JSX directamente en el navegador -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <!-- Elemento donde se renderizará React -->
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Componente simple en React
+        function App() {
+            return <h1>¡Hola desde React con enlaces externos!</h1>;
+        }
+
+        // Renderizar el componente en el div con id "root"
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
