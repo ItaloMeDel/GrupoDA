@@ -1,0 +1,15 @@
+{
+  "name": "experienciano3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ItaloMedina",
+  "license": "ISC",
+  "dependencies": {
+    "file-server": "^2.2.1"
+  }
+}
