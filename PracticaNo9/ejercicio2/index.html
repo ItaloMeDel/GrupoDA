@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Archivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Cargar Archivo por Especialidad</h1>
+<form action="upload.php" method="POST" enctype="multipart/form-data">
+    <label for="archivo">Seleccionar archivo:</label>
+    <input type="file" name="archivo" id="archivo" required>
+
+    <label for="especialidad">Especialidad:</label>
+    <select name="especialidad" id="especialidad" required>
+        <option value="Estadistica">Estadística</option>
+        <option value="DesarrolloWeb">Desarrollo Web</option>
+        <option value="Testing">Testing</option>
+    </select>
+
+    <button type="submit" name="submit">Subir Archivo</button>
+</form>
+
+<br>
+<a href="view.php" class="btn-view">Ver Archivos Subidos</a>
+
+</body>
+</html>
