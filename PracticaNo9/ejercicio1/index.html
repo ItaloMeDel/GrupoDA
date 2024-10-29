@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción de Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .form-container {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], textarea, select, input[type="number"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulario de Inscripción de Usuarios</h2>
+        <form action="confirmacion.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <textarea id="direccion" name="direccion" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmar_contrasena">Confirmar contraseña:</label>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="precio_base">Precio base del boleto (en $):</label>
+                <input type="number" id="precio_base" name="precio_base" step="0.01" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" value="Hombre" required> Hombre
+                <input type="radio" name="sexo" value="Mujer"> Mujer
+            </div>
+
+            <div class="form-group">
+                <label>Por favor, elige los temas de interés:</label>
+                <input type="checkbox" name="temas[]" value="Ficción"> Ficción
+                <input type="checkbox" name="temas[]" value="Acción"> Acción
+                <input type="checkbox" name="temas[]" value="Suspense"> Suspense
+                <input type="checkbox" name="temas[]" value="Terror"> Terror
+                <input type="checkbox" name="temas[]" value="Comedia"> Comedia
+            </div>
+
+            <div class="form-group">
+                <label>Selecciona tus aficiones:</label>
+                <select name="aficiones[]" multiple required>
+                    <option value="Deporte al aire libre">Deporte al aire libre</option>
+                    <option value="Música-Pop">Música-Pop</option>
+                    <option value="Fotografía">Fotografía</option>
+                    <option value="Cine">Cine</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+
+</body>
+</html>
