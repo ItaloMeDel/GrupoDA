@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e1f5fe; 
+        }
+        .container {
+            width: 40%;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: #ffffff; 
+            border-radius: 15px; 
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
+            border: 2px solid #0288d1; 
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #01579b; 
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px 0;
+            font-weight: bold;
+            color: #0277bd; 
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #4fc3f7; 
+            border-radius: 10px; 
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #e0f7fa; 
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 12px;
+            background-color: #0288d1; 
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #01579b; 
+        }
+        .temas-interes {
+            margin-bottom: 15px;
+        }
+        .aficiones select {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Usuarios</h2>
+        <form action="procesar_registro.php" method="post">
+            <label for="nombre_completo">Nombre completo:</label>
+            <input type="text" name="nombre_completo" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" name="direccion" required>
+            
+            <label for="correo_electronico">Correo electrónico:</label>
+            <input type="email" name="correo_electronico" required>
+            
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" required>
+            
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" required>
+            
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" required>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select>
+            
+            <div class="temas-interes">
+                <label for="temas_interes">Temas de interés:</label><br>
+                <input type="checkbox" name="temas_interes[]" value="Ficción"> Ficción
+                <input type="checkbox" name="temas_interes[]" value="Terror"> Terror
+                <input type="checkbox" name="temas_interes[]" value="Acción"> Acción
+                <input type="checkbox" name="temas_interes[]" value="Comedia"> Comedia
+            </div>
+            
+            <div class="aficiones">
+                <label for="aficiones">Selecciona tus aficiones:</label>
+                <select name="aficiones[]" multiple>
+                    <option value="Deporte-aire-libre">Deporte al aire libre</option>
+                    <option value="Música-Pop">Música Pop</option>
+                    <option value="Fotografía">Fotografía</option>
+                </select>
+            </div>
+            
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>
